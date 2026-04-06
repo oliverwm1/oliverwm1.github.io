@@ -55,9 +55,48 @@
             padding: 0 24px;
         }
 
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 187px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 40%;
+            display: block;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .banner-text h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .banner-text span {
+            font-size: 1.05rem;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+        }
+
         /* Header / Hero */
         .hero {
-            padding: 60px 0 48px;
+            padding: 48px 0 48px;
         }
 
         .hero-inner {
@@ -250,14 +289,21 @@
 </head>
 <body>
 
+<div class="banner">
+    <img src="images/banner.jpg" alt="">
+    <div class="banner-text">
+        <h1>Oliver Watt-Meyer</h1>
+        <span>Climate and Machine Learning</span>
+    </div>
+</div>
+
 <section class="hero">
     <div class="container">
         <div class="hero-inner">
             <img class="headshot" src="images/headshot.jpg" alt="Oliver Watt-Meyer">
             <div class="hero-text">
-                <h1>Oliver Watt-Meyer</h1>
                 <p>
-                    I lead the <a href="https://allenai.org/climate-modeling">Climate Modeling</a> team at the Allen Institute for AI. We develop deep learning methods to improve the fidelity,
+                    I lead the <a href="https://allenai.org/climate-modeling">Climate Modeling</a> team at the Allen Institute for AI. We develop deep learning to improve the fidelity,
                     speed, and accessibility of climate models. My research interests are in atmospheric dynamics, climate change,
                     climate modeling and machine learning. 
                 </p>
@@ -266,7 +312,7 @@
                     focused on handling manuscripts related to the use of machine learning in Earth system modeling. We welcome your submissions!
                 </p>
                 <p>
-				    I hold an Affiliate Associate Professor position in the Department of
+				    I also hold an Affiliate Associate Professor position in the Department of
                     Atmospheric and Climate Science at the University of Washington.
                 </p>
                 <p>Contact me at <a href="mailto:oliverwm@allenai.org">oliverwm@allenai.org</a>.</p>
